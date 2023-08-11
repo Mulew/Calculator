@@ -3,6 +3,7 @@ import React from 'react';
 //import { faBars } from '@fortawesome/free-solid-svg-icons';
 //import '@fortawesome/fontawesome-free/css/all.css';
 import Calculator from './Calculator/calculator';
+
 export default class App extends React.Component{
   constructor(props){
     super(props);

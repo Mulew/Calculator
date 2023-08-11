@@ -8,7 +8,7 @@ export default class Calculator extends React.Component{
         return(
             <div className='Container'>
                 <div className='screen'>
-                    <h1>Screen Area</h1>
+                    <h1>0</h1>
                 </div>
                 <div className='numbers'>
                     <h4 className='item1'>AC</h4>
