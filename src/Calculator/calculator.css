@@ -1,0 +1,46 @@
+@media (max-width:769px) and (min-width:375px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .Container{
+        display: grid;
+    }
+    .screen{
+        width: 100%;
+        height: 60px;
+        background-color: rgb(176, 175, 174);
+        text-align: end;
+        padding-right: 15px;
+    }
+    .numbers{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-auto-rows: 70px;
+        row-gap: 1px;
+        column-gap: 1px;
+        background-color: rgb(161, 160, 160)
+    }
+    .item1{
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        background-color: rgb(221, 220, 217);
+        padding-top: 23px;
+    }
+    .item0{
+        background-color: orange;
+        width: 100%;
+        box-sizing: border-box;
+        padding-top: 23px;
+        text-align: center;
+    }
+    .item1x {
+        grid-column: 1 / span 3;
+        text-align: center;
+        padding-top: 23px;
+        box-sizing: border-box;
+        background-color: rgb(221, 220, 217);
+    }
+}
