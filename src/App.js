@@ -1,19 +1,21 @@
 import React from 'react';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-//import { faBars } from '@fortawesome/free-solid-svg-icons';
-//import '@fortawesome/fontawesome-free/css/all.css';
-import Calculator from './Calculator/calculator';
-//import ParentComponent from './trial'
-export default class App extends React.Component{
-  constructor(props){
-    super(props);
-  }
- render(){
-    return (
-      <div>
-        <Calculator />
-      </div>
-    );
- }
+import { Routes, Route } from 'react-router-dom';
+import Calculator from './calculator';
+import Quote from './quote';
+import Home from './Home';
+import Navbar from './navbar';
+
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <Routes>
+        <Route path="" element={<Home />} />
+        <Route path="/calculator" element={<Calculator />} />
+        <Route path="/quote" element={<Quote />} />
+      </Routes>
+    </div>
+  );
 }
 
+export default App;
